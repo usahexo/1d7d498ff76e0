@@ -90,7 +90,7 @@
 				    
 				    <li><a href="/categories/Online-Casino/" class="animsition-link">Online Casino<small>(6)</small></a></li>
 				    
-				    <li><a href="/categories/Vegas-X-Slots/" class="animsition-link">Vegas X Slots<small>(1)</small></a></li>
+				    <li><a href="/categories/Vegas-X-Slots/" class="animsition-link">Vegas X Slots<small>(2)</small></a></li>
 				    
 				    <li><a href="/categories/internet-casino/" class="animsition-link">internet casino<small>(3)</small></a></li>
 				    
@@ -316,4 +316,28 @@ $('#intro').find('img').each(function(){
       
 </body>
 </html>
-l>
+script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+      
+</body>
+</html>
